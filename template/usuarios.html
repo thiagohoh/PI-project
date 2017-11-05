@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+  
+{% block content %}
+  <h2>Usuários</h2>
+  <p>Insira o nome ou o código do usuário desejado.</p>
+		
+	<form action = "" method = "post">
+		<input type="username" placeholder = "Nome ou Código" name = "username" value = "{{request.form.username}}">
+	</form>
+
+{% endblock %}
