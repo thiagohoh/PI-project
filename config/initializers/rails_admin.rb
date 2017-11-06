@@ -26,7 +26,9 @@ RailsAdmin.config do |config|
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
-    new
+    new do
+    except ['Action']
+    end
     export
     bulk_delete
     show
@@ -38,4 +40,36 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
+
+
+  config.model Aluno do
+    create do
+      field :name
+      field :email
+      field :notes
+      field :status
+      field :user_id, :hidden do
+        default_value do
+          bindings[:view]._current_user.id
+        end
+      end
+
+    end
+
+
+    edit do
+      field :name
+      field :email
+      field :notes
+      field :status
+      field :user_id, :hidden do
+        default_value do
+          bindings[:view]._current_user.id
+        end
+      end
+
+    end
+
+  end
+
 end
