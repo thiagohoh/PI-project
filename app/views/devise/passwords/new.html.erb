@@ -1,4 +1,20 @@
-<h2>Forgot your password?</h2>
+<html>
+<link rel = "stylesheet" href = "{{url_for('static',filename = 'app/assets/stylesheets/application.css')}} "></strong>
+
+<header>
+  <div class="container">
+    <h1 class="logo">PI</h1>
+  </div>
+</header>
+
+
+<body style="font-family: Helvetica Neue", Helvetica, Arial, sans-serif>
+<div class="container">
+  <h1 style ="font-size:3em;text-align: center">Forgot your password?</h1>
+  <div class = "row">
+    <div class="col-md-6 col-md-offset-3">
+
+
 
 <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
   <%= devise_error_messages! %>
@@ -9,8 +25,19 @@
   </div>
 
   <div class="actions">
-    <%= f.submit 'Send me reset password instructions' %>
+    <%= f.submit 'Send me reset password instructions',class: 'button' %>
   </div>
 <% end %>
 
+    </div>
+  </div>
 <%= render 'devise/shared/links' %>
+
+</div>
+</body>
+
+<div class = "footer">
+  <p class align = "right"><strong>3.14</strong></p>
+</div>
+
+</html>
