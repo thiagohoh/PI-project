@@ -40,6 +40,7 @@ RailsAdmin.config do |config|
     show_in_app
     pdf do
       only User
+      only Aluno
     end
     ## With an audit adapter, you can add:
     # history_index
@@ -50,8 +51,8 @@ RailsAdmin.config do |config|
   config.model Aluno do
     navigation_icon 'fa fa-id-card-o'
     create do
-      field :name
       field :photo
+      field :name
       field :email
       field :notes
       field :status
@@ -66,8 +67,8 @@ RailsAdmin.config do |config|
  
  
     edit do
-      field :name
       field :photo
+      field :name
       field :email
       field :notes
       field :status
@@ -85,6 +86,14 @@ RailsAdmin.config do |config|
       field :name
       field :salas
       field :email
+    end
+    show do
+      field :photo
+      field :name
+      field :salas
+      field :email
+      field :status
+
     end
  
   end
@@ -93,13 +102,13 @@ RailsAdmin.config do |config|
     navigation_icon 'fa fa-user-o'
 
     create do
+      field :photo
       field :name
       field :kind
       field :status
       field :notes
       field :email
       field :password
-      field :photo
 
     end
 
@@ -119,8 +128,47 @@ RailsAdmin.config do |config|
       field :name
       field :kind
       field :notes
+      field :email
+      field :status
 
 
+    end
+
+    show do
+      field :photo
+      field :name
+      field :kind
+      field :notes
+      field :email
+      field :status
+      field :alunos
+      field :salas
+    end
+
+  end
+
+  config.model Sala do
+
+    create do
+
+      field :name
+      field :description
+      field :status
+      field :photo
+      field :user_id, :hidden do
+        default_value do
+          bindings[:view]._current_user.id
+        end
+
+      end
+
+    end
+
+    list do
+      field :photo
+      field :name
+      field :description
+      field :status
     end
 
   end
