@@ -8,4 +8,5 @@ class User < ApplicationRecord
 
   has_many :alunos
   has_many :salas
+  has_many :actions
 end
