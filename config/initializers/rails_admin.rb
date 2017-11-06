@@ -54,6 +54,7 @@ RailsAdmin.config do |config|
       field :email
       field :notes
       field :status
+      field :salas
       field :user_id, :hidden do
         default_value do
           bindings[:view]._current_user.id
@@ -68,6 +69,7 @@ RailsAdmin.config do |config|
       field :email
       field :notes
       field :status
+      field :salas
       field :user_id, :hidden do
         default_value do
           bindings[:view]._current_user.id
