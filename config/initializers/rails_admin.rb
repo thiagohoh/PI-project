@@ -1,5 +1,6 @@
 RailsAdmin.config do |config|
- 
+
+  config.main_app_name = %w(UTFPR DOOR)
   ### Popular gems integration
  
   ## == Devise ==
@@ -43,6 +44,7 @@ RailsAdmin.config do |config|
  
  
   config.model Aluno do
+    navigation_icon 'fa fa-id-card-o'
     create do
       field :name
       field :email
@@ -71,5 +73,42 @@ RailsAdmin.config do |config|
     end
  
   end
+
+  config.model User do
+    navigation_icon 'fa fa-user-o'
+
+    create do
+      field :name
+      field :kind
+      field :status
+      field :notes
+      field :email
+      field :password
+      field :photo
+
+    end
+
+    edit do
+      field :name
+      field :kind
+      field :status
+      field :notes
+      field :email
+      field :password
+      field :photo
+    end
+
+    list do
+
+      field :photo
+      field :name
+      field :kind
+      field :notes
+
+
+    end
+
+  end
+
  
 end
