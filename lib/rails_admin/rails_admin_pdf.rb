@@ -44,6 +44,12 @@ module RailsAdmin
                 pdf.move_down 8
               end
 
+
+              if @objects.sala
+                pdf.text "Status: #{@objects.sala}", :size => 12, :align => :justify, :inline_format => true
+                pdf.move_down 8
+              end
+
               if @object.status
                 pdf.text "Status: #{@object.status}", :size => 12, :align => :justify, :inline_format => true
                 pdf.move_down 8

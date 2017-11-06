@@ -1,0 +1,21 @@
+
+<link rel = "stylesheet" href = "{{url_for('static',filename = 'app/assets/stylesheets/application.css')}} "></strong>
+
+<header>
+  <div class="container">
+    <h1 class="logo">PI</h1>
+  </div>
+</header>
+
+<body>
+
+
+<%= video_tag('load.mp4', autoplay: true, loop: true) %>
+
+<%= link_to 'Continue', rails_admin_url, class: 'buttom' %>
+
+</body>
+
+<div class = "footer">
+  <p class align = "right"><strong>3.14</strong></p>
+</div>
