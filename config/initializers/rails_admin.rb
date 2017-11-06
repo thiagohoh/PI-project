@@ -51,6 +51,7 @@ RailsAdmin.config do |config|
     navigation_icon 'fa fa-id-card-o'
     create do
       field :name
+      field :photo
       field :email
       field :notes
       field :status
@@ -66,6 +67,7 @@ RailsAdmin.config do |config|
  
     edit do
       field :name
+      field :photo
       field :email
       field :notes
       field :status
@@ -76,6 +78,13 @@ RailsAdmin.config do |config|
         end
       end
  
+    end
+
+    list do
+      field :photo
+      field :name
+      field :salas
+      field :email
     end
  
   end
