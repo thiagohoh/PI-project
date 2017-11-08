@@ -12,7 +12,10 @@ class Ability
         can :read, Action, user_id: user.id
         can :read, Sala, status: :active
         can :manage, Sala, status: :active
-
+      elsif user.kind == 'limpeza'
+        can :access, :rails_admin
+        can :dashboard
+        can :read ,Sala
       elsif user.kind == 'adm'
         can :manage, :all
       end

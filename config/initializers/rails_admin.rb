@@ -122,13 +122,19 @@ RailsAdmin.config do |config|
     end
 
     edit do
-      field :name
+      field :photo
+      field :name do
+        required true
+      end
       field :kind
       field :status
       field :notes
-      field :email
-      field :password
-      field :photo
+      field :email do
+        required true
+      end
+      field :password do
+        required true
+      end
     end
 
     list do
@@ -160,7 +166,9 @@ RailsAdmin.config do |config|
 
     create do
 
-      field :name
+      field :name do
+        required true
+      end
       field :description
       field :status
       field :photo
