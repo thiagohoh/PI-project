@@ -1,0 +1,5 @@
+cores da UTFPR:
+
+amarelo -> #f6c500
+preto -> #211819
+branco -> #ffffff
