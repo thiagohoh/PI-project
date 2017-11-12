@@ -1,4 +1,3 @@
-
 <link rel = "stylesheet" href = "{{url_for('static',filename = 'app/assets/stylesheets/application.css')}} "></strong>
 
 <header>
@@ -8,12 +7,12 @@
 </header>
 
 <body>
+  <%= video_tag('load.mp4', autoplay: true, loop: true) %>
+
+  <%= image_tag('joinha.gif',width: 500,height: 500) %>
+  <%= link_to 'Continue', rails_admin_url, class: 'buttom' %>
 
 
-<%= video_tag('load.mp4', autoplay: true, loop: true) %>
-
-<%= image_tag('joinha.gif',width: 500,height: 500) %>
-<%= link_to 'Continue', rails_admin_url, class: 'buttom' %>
 
 </body>
 

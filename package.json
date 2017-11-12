@@ -1,5 +1,7 @@
 {
   "name": "agoravai",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "animejs": "latest"
+  }
 }
