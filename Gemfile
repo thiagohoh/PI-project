@@ -37,8 +37,8 @@ gem 'rails_admin_rollincode', '~> 1.0' , git: 'https://github.com/thiagohoh/roll
 #gem 'rails_admin_rollincode', '~> 1.0'
 
 gem 'rails_admin', git: 'https://github.com/sferik/rails_admin.git'
-gem 'devise'
-gem 'cancancan'
+gem 'devise', '~> 4.3'
+gem 'cancancan','~> 1.15.0'
 gem 'carrierwave'
 gem 'bcrypt', git: 'https://github.com/codahale/bcrypt-ruby.git', :require => 'bcrypt'
 gem 'font-awesome-rails'

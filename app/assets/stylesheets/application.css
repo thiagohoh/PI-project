@@ -63,7 +63,11 @@ header h1.logo:hover {
 /*
  * Center the body content
  */
-
+.imagero{
+    display: block;
+    margin: auto;
+    width: 40%;
+}
 .container {
     width: 940px;
     margin: 0 auto;

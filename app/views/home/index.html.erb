@@ -1,5 +1,7 @@
 <link rel = "stylesheet" href = "{{url_for('static',filename = 'app/assets/stylesheets/application.css')}} "></strong>
 
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/darkly/bootstrap.min.css"
+      rel="stylesheet">
 <header>
   <div class="container">
     <h1 class="logo">PI</h1>
@@ -7,10 +9,31 @@
 </header>
 
 <body>
-  <%= video_tag('load.mp4', autoplay: true, loop: true) %>
 
-  <%= image_tag('joinha.gif',width: 500,height: 500) %>
-  <%= link_to 'Continue', rails_admin_url, class: 'buttom' %>
+  <div>
+    <div class="imagero">
+      <%= image_tag('utfpr.jpg',width: 500,height: 250) %>
+      <h1>Sistema de portas automaticas.</h1>
+
+      <div>
+        <h5>Clique abaixo para continuar.</h5>
+        <div>
+          <%= button_to 'Login/Sign Up', rails_admin_url, :method => 'get',:class => 'btn btn-secondary' %>
+
+        </div>
+
+      </div>
+    </div>
+
+
+
+<div class="imagero">
+  <%= image_tag('joinha.gif',width: 150,height: 150) %>
+</div>
+
+  </div>
+
+
 
 
 

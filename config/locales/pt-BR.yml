@@ -4,14 +4,21 @@ pt-BR:
       x_days:
         one: "1 dias"
         other: "%{count} dias"
+
   activerecord:
     models:
       aluno:
         one: 'Aluno'
         other: 'Alunos'
+      sala:
+        one: 'Sala'
+        other: 'Salas'
     attributes:
       aluno:
         name: "Nome"
+      sala:
+        name: 'nome'
+        description: 'Descrição'
 
 
   views:
@@ -39,6 +46,7 @@ pt-BR:
       navigation: "Navegação"
       log_out: "Terminar Sessão"
       ago: "atrás"
+
     flash:
       successful: "%{name} %{action} com sucesso"
       error: "%{name} %{action} sem sucesso"
@@ -125,6 +133,7 @@ pt-BR:
       delete_confirmation: "Confirmar apagar"
       bulk_delete: "Os seguintes objetos serão apagados, o que pode apagar ou deixar orfãos as dependências relacionadas"
     export:
+      select_all_fields: 'Selecionar todos os campos'
       confirmation: "Exportar para %{name}"
       select: "Selecionar campos para exportar"
       fields_from: "Campos de %{name}"
