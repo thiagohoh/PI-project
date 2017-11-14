@@ -24,30 +24,30 @@ RailsAdmin.config do |config|
  
   ## == Gravatar integration ==
   ## To disable Gravatar integration in Navigation Bar set to false
-  # config.show_gravatar = true
+  config.show_gravatar = false
  
   config.actions do
     dashboard                     # mandatory
     index                         # mandatory
     new do
-    except ['Action']
+    except ['Action']             #new in model action is out
     end
-    export
+    export                        #can export to csv
     bulk_delete
     show
     edit
     delete
     show_in_app
-    pdf
+    pdf                           #pdf all models
     ## With an audit adapter, you can add:
     # history_index
     # history_show
   end
  
  
-  config.model Aluno do
+  config.model Aluno do #config model aluno
     navigation_icon 'fa fa-id-card-o'
-    create do
+    create do #config what fields can be seen in /create
       field :photo
       field :name do
         required true
@@ -176,7 +176,7 @@ RailsAdmin.config do |config|
         required true
       end
       field :photo
-      field :user_id, :hidden do
+      field :user_id, :hidden do #field user_id is secretly  binded to current user
         default_value do
           bindings[:view]._current_user.id
         end
