@@ -12,10 +12,10 @@ class Ability
         can :access, :rails_admin
         can :dashboard
         #can :manage,:all
-        can :crud, Aluno if user.kind == 'professor'
         can :crud, Aluno
+
         can :read, Action
-        can :crud, Sala, status: :active
+        can :update, Sala, status: :active
       end
       if user.kind == 'limpeza'
         #can :read,:all

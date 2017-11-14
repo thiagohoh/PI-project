@@ -38,9 +38,7 @@ RailsAdmin.config do |config|
     edit
     delete
     show_in_app
-    pdf do
-      only ['User'] && ['Aluno']
-    end
+    pdf
     ## With an audit adapter, you can add:
     # history_index
     # history_show
@@ -109,8 +107,12 @@ RailsAdmin.config do |config|
       field :name do
         required true
       end
-      field :kind
-      field :status
+      field :kind do
+        required true
+      end
+      field :status do
+        required true
+      end
       field :notes
       field :email do
       required true
@@ -170,7 +172,9 @@ RailsAdmin.config do |config|
         required true
       end
       field :description
-      field :status
+      field :status do
+        required true
+      end
       field :photo
       field :user_id, :hidden do
         default_value do
