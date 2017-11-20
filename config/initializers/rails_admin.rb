@@ -63,8 +63,7 @@ RailsAdmin.config do |config|
       end
  
     end
- 
- 
+
     edit do
       field :photo
       field :name do
@@ -148,7 +147,6 @@ RailsAdmin.config do |config|
       field :email
       field :status
 
-
     end
 
     show do
@@ -165,6 +163,7 @@ RailsAdmin.config do |config|
   end
 
   config.model Sala do
+    navigation_icon 'fa fa-desktop'
 
     create do
 
@@ -176,13 +175,11 @@ RailsAdmin.config do |config|
         required true
       end
       field :photo
-      field :user_id, :hidden do #field user_id is secretly  binded to current user
+      field :user_id, :hidden do #field user_id is secretly blinded to current user
         default_value do
           bindings[:view]._current_user.id
         end
-
       end
-
     end
 
     list do
@@ -191,8 +188,5 @@ RailsAdmin.config do |config|
       field :description
       field :status
     end
-
   end
-
- 
 end
