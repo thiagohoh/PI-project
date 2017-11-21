@@ -43,7 +43,25 @@ RailsAdmin.config do |config|
     # history_index
     # history_show
   end
- 
+
+  config.model Action do
+    navigation_icon 'fa fa-check-square-o'
+
+    list do
+      field :name
+      field :salas
+      field :email
+      field :created_at
+    end
+    show do
+      field :name
+      field :salas
+      field :email
+      field :status
+      field :created_at
+    end
+
+  end
  
   config.model Aluno do #config model aluno
     navigation_icon 'fa fa-id-card-o'
