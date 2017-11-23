@@ -44,6 +44,7 @@ RailsAdmin.config do |config|
     # history_show
   end
 
+
   config.model Action do
     navigation_icon 'fa fa-check-square-o'
 
