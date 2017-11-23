@@ -44,7 +44,8 @@ RailsAdmin.config do |config|
     # history_show
   end
  
- 
+
+
   config.model Aluno do #config model aluno
     navigation_icon 'fa fa-id-card-o'
     create do #config what fields can be seen in /create

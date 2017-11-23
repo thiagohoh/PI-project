@@ -5,8 +5,8 @@ GIT
     bcrypt (3.1.11)
 
 GIT
-  remote: https://github.com/sferik/rails_admin.git
-  revision: b634e00552bddff10ab000f7984b60b13fc3b669
+  remote: https://github.com/thiagohoh/rails_admin_cheapass_copy.git
+  revision: 7506f9df26d56a25a39861ad97e723b13918c849
   specs:
     rails_admin (1.2.0)
       builder (~> 3.1)

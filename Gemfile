@@ -36,7 +36,7 @@ gem 'jbuilder', '~> 2.5'
 gem 'rails_admin_rollincode', '~> 1.0' , git: 'https://github.com/thiagohoh/rollincode_custom_kuro.git'
 #gem 'rails_admin_rollincode', '~> 1.0'
 
-gem 'rails_admin', git: 'https://github.com/sferik/rails_admin.git'
+gem 'rails_admin', git: 'https://github.com/thiagohoh/rails_admin_cheapass_copy.git'
 gem 'devise', '~> 4.3'
 gem 'cancancan','~> 1.15.0'
 gem 'carrierwave'
