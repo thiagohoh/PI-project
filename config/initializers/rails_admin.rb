@@ -50,13 +50,17 @@ RailsAdmin.config do |config|
 
     list do
       field :name
-      field :salas
+      field :salas do
+        label 'Labs'
+      end
       field :email
       field :created_at
     end
     show do
       field :name
-      field :salas
+      field :salas do
+      label 'Labs'
+    end
       field :email
       field :status
       field :created_at
@@ -74,7 +78,9 @@ RailsAdmin.config do |config|
       field :email
       field :notes
       field :status
-      field :salas
+      field :salas  do
+        label 'Labs'
+      end
       field :user_id, :hidden do
         default_value do
           bindings[:view]._current_user.id
@@ -91,7 +97,9 @@ RailsAdmin.config do |config|
       field :email
       field :notes
       field :status
-      field :salas
+      field :salas do
+        label 'Labs'
+      end
       field :user_id, :hidden do
         default_value do
           bindings[:view]._current_user.id
@@ -103,13 +111,17 @@ RailsAdmin.config do |config|
     list do
       field :photo
       field :name
-      field :salas
+      field :salas do
+        label 'Labs'
+      end
       field :email
     end
     show do
       field :photo
       field :name
-      field :salas
+      field :salas do
+        label 'Labs'
+      end
       field :email
       field :status
 
@@ -176,7 +188,9 @@ RailsAdmin.config do |config|
       field :email
       field :status
       field :alunos
-      field :salas
+      field :salas do
+        label 'Labs'
+      end
     end
 
   end

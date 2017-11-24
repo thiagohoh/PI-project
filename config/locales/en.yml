@@ -31,3 +31,23 @@
 
 en:
   hello: "Hello world"
+  admin:
+    actions:
+      pdf:
+       menu: 'PDF'
+  activerecord:
+      models:
+        aluno:
+          one: 'Student'
+          other: 'Students'
+
+        sala:
+          one: 'Lab'
+          other: 'Labs'
+
+      attributes:
+        aluno:
+          name: "Name"
+        sala:
+          name: 'Name'
+
