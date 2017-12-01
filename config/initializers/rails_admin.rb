@@ -77,7 +77,9 @@ RailsAdmin.config do |config|
       end
       field :email
       field :notes
-      field :status
+      field :status do
+        required true
+      end
       field :salas  do
         label 'Labs'
       end
@@ -96,7 +98,9 @@ RailsAdmin.config do |config|
       end
       field :email
       field :notes
-      field :status
+      field :status do
+        required true
+      end
       field :salas do
         label 'Labs'
       end
