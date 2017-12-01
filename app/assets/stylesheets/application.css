@@ -74,6 +74,12 @@ header h1.logo:hover {
     min-height: 100%;
 }
 
+.alert{
+    color: #FF0000;
+    font-size: 1.2em;
+    text-align: left;
+}
+
 div.jumbo {
     padding: 10px 0 30px 0;
     background-color: #c6c2c2;
