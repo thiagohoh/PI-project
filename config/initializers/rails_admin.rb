@@ -226,4 +226,42 @@ RailsAdmin.config do |config|
       field :status
     end
   end
+
+
+  config.model Rasp do
+
+    create do
+      field :rasp_id do
+        required true
+      end
+
+      field :door_id_t do
+        required true
+      end
+    end
+
+    show do
+      field :rasp_id
+      field :door_id_t
+    end
+
+    list do
+      field :rasp_id
+      field :door_id_t do
+        label 'Door'
+      end
+    end
+
+  end
+
+
+
+
+
+
+
 end
+
+
+
+
