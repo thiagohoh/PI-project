@@ -238,6 +238,9 @@ RailsAdmin.config do |config|
       field :door_id_t do
         required true
       end
+
+
+
     end
 
     show do
