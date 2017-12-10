@@ -229,6 +229,7 @@ RailsAdmin.config do |config|
 
 
   config.model Rasp do
+    navigation_icon 'fa fa-sign-in'
 
     create do
       field :rasp_id do
