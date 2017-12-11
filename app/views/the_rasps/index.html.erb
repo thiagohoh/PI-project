@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>The Rasps</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Rfid</th>
+      <th>Name</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @the_rasps.each do |the_rasp| %>
+      <tr>
+        <td><%= the_rasp.rfid %></td>
+        <td><%= the_rasp.name %></td>
+        <td><%= link_to 'Show', the_rasp %></td>
+        <td><%= link_to 'Edit', edit_the_rasp_path(the_rasp) %></td>
+        <td><%= link_to 'Destroy', the_rasp, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+
+    <%= form_tag(the_rasps_path,method: :get) do %>
+      <%= text_field_tag :term , params[:term]%>
+      <%= submit_tag 'Enter', name: nil %>
+  <% end %>
+
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New The Rasp', new_the_rasp_path %>
