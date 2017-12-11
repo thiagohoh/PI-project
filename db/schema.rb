@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171204232902) do
+ActiveRecord::Schema.define(version: 20171210062846) do
 
   create_table "actions", force: :cascade do |t|
     t.integer "aluno_id"
@@ -58,6 +58,13 @@ ActiveRecord::Schema.define(version: 20171204232902) do
     t.integer "user_id"
     t.index ["aluno_id"], name: "index_salas_on_aluno_id"
     t.index ["user_id"], name: "index_salas_on_user_id"
+  end
+
+  create_table "the_rasps", force: :cascade do |t|
+    t.integer "rfid"
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "user_salas", id: false, force: :cascade do |t|
