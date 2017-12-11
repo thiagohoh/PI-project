@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Rfid:</strong>
+  <%= @the_rasp.rfid %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @the_rasp.name %>
+</p>
+
+<%= link_to 'Edit', edit_the_rasp_path(@the_rasp) %> |
+<%= link_to 'Back', the_rasps_path %>
