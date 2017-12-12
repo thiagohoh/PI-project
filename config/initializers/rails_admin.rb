@@ -232,25 +232,25 @@ RailsAdmin.config do |config|
     navigation_icon 'fa fa-sign-in'
 
     create do
-      field :rasp_id do
+      field :rfid do
         required true
       end
 
-      field :door_id_t do
+      field :name do
         required true
       end
 
     end
 
     show do
-      field :rasp_id
-      field :door_id_t
+      field :rfid
+      field :name
     end
 
     list do
-      field :rasp_id
-      field :door_id_t do
-        label 'Door'
+      field :rfid
+      field :name do
+        label 'Name'
       end
     end
 
