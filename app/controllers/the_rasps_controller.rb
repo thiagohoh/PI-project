@@ -5,9 +5,6 @@ class TheRaspsController < ApplicationController
   # GET /the_rasps.json
 
 
-
-
-
   def index
     #@the_rasps = TheRasp.all
     @the_rasps = TheRasp.search(params[:term], params[:term2])
