@@ -228,7 +228,7 @@ RailsAdmin.config do |config|
   end
 
 
-  config.model Rasp do
+  config.model TheRasp do
     navigation_icon 'fa fa-sign-in'
 
     create do
