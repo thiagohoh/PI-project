@@ -10,7 +10,7 @@ class TheRaspsController < ApplicationController
 
   def index
     #@the_rasps = TheRasp.all
-    @the_rasps = TheRasp.search(params[:term])
+    @the_rasps = TheRasp.search(params[:term], params[:term2])
 
   end
 

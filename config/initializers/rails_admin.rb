@@ -240,8 +240,6 @@ RailsAdmin.config do |config|
         required true
       end
 
-
-
     end
 
     show do
@@ -257,12 +255,6 @@ RailsAdmin.config do |config|
     end
 
   end
-
-
-
-
-
-
 
 end
 
