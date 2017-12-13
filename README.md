@@ -39,8 +39,7 @@ Things you may need to know:
 
 
 * Deployment instructions
- - The main page will be something like this 'localhost:3000'
-
+ - The main page will be something like your localhost 127.1.1.1
 
 * Known ISSUES
 The simulation is not quite working.
